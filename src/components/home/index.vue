@@ -60,11 +60,104 @@ imageView2/2/w/730/h/0/q/75/format/webp" alt="" />
 		<div class="recommend">
 			<img src="https://img.yzcdn.cn/upload_files/2017/12/27/FvItTsqNNVeYY2ZFFeWinaCDsLp1.jpg?imageView2/2/w/730/h/0/q/75/format/webp" alt="" />
 		</div>
-			
+		<!--选项卡-->
+		<div class="big">
+			<div class="navcontent">
+				<ul class="nav_header">
+					<li class='first'>生活用品</li>
+					<li>休闲零食</li>
+					<li>女性护理</li>
+					<li>个人洗护</li>
+					<li>美颜护肤</li>
+					<li>校园轻奢</li>
+					<li>运动鞋服</li>
+					<li>营养早餐</li>
+				</ul>
+			</div>
+			<ol class="nav_olheader">
+					<li>
+						<a href="###"  v-for="item of articleslist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of foodlist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of womanlist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of personCarelist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of nicelist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of buylist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of clotheslist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###"  v-for="item of lunchlist" :key="item.id">
+							<img :src="item.image_url" alt="" />
+							<div>
+								<h3>{{item.title}}</h3>
+								<p>￥&nbsp;{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+			</ol>
+		</div>
+		<div class="footer">
+			<div class="footer_kind">
+				<a href="" ></a>
+			</div>
+		</div>
 	</div>
 </template>
 
 <script src='./script.js'></script>
 
-<style lang='scss' src='./style.scss'></style>
 
+<style lang='scss' src='./style.scss'></style>

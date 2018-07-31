@@ -6,7 +6,7 @@ html, body, .container {
 .container {
     @include flexbox();
     @include flex-direction(column);
-
+    @include overflow();
     
     .content {
         @include flex();
