@@ -1,5 +1,5 @@
 <template>
-	<div class="content">购物车</div>
+	<div class="content">cart</div>
 </template>
 
 <script src='./script.js'></script>
